@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,14 +12,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #6366f1;
+    background-color: #6366f1;
 }
 
 .btn-default {
-    background: #6366f1;
+    background-color: #6366f1;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 15px;
@@ -28,13 +29,12 @@ body {
     cursor: pointer;
     gap: 8px;
     height: fit-content;
-    width: 40px;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-    transition: background 0.3s ease;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 .btn-default:hover {
-    background: #818cf8;
+    background-color: #818cf8;
 }
 
 #form_container {
@@ -42,11 +42,10 @@ body {
     flex-direction: column;
     gap: 32px;
     height: 100%;
-    background: #f6f8ff;
+    background-color: #f6f8ff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-    width: 400px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);    
 }
 
 #form_header {
@@ -56,7 +55,6 @@ body {
 }
 
 #form_title {
-    font-size: 24px;
     font-weight: 500;
     color: #272727;
     position: relative;
@@ -65,12 +63,12 @@ body {
 #form_title::after {
     content: '';
     position: absolute;
-    bottom: 0px;
-    left: 0;
     width: 100px;
     height: 3px;
-    background: #6366f1;
     border-radius: 30px;
+    background-color: #6366f1;
+    left: 0;
+    bottom: 0;
 }
 
 #form {
@@ -97,7 +95,7 @@ body {
     align-items: center;
     background-color: #ffff;
     border-radius: 8px;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .input-field i {
@@ -117,8 +115,7 @@ body {
 
 .input-field .password-icon:hover {
     cursor: pointer;
-    color: #676770 ;
-    
+    color: #676770;
 }
 
 .form-control:focus {
@@ -126,11 +123,11 @@ body {
 }
 
 .input-box .input-field:focus-within {
-    outline: 2px;
+    outline: 2px solid #6366f1;
 }
 
 input:-webkit-autofill {
-    -webkit-boxshadow: 0 0 0px 1000px #ffff inset !important;
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
     color: #000;
 }
 
@@ -145,8 +142,8 @@ input:-webkit-autofill {
 
 .radio-box {
     display: flex;
-    align-items: center;
     gap: 4px;
+    align-items: center;
 }
 
 .form-control[type="radio"] {
@@ -167,6 +164,6 @@ input:-webkit-autofill {
     }
 
     .form-control[type="date"] {
-        background-color: #ffff;
+        background-color: #fff;
     }
 }
